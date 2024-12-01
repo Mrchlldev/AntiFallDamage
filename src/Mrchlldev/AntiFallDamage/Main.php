@@ -23,12 +23,12 @@ class Main extends PluginBase implements Listener {
         if(!$entity instanceof Player) return;
         if($event->getCause() === EntityDamageEvent::CAUSE_FALL){
             foreach($this->getConfig()->get("worlds") as $world){
-                if($player->getWorld()->getFolderName() === $world){
+                if($entity->getWorld()->getFolderName() === $world){
                     $event->cancel();
                 }
             }
             if($player->hasPermission("antifalldamage.bypass")){
-                $player->sendTip("§aWe remove the fall damage for you!");
+                $entity->sendTip("§aWe remove the fall damage for you!");
                 $event->cancel();
             }
         }
