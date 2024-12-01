@@ -1,0 +1,10 @@
+name: AntiFallDamage
+description: "A PocketMine-MP Plugin for disable fall damage in world or bypassed player"
+api: 5.0.0
+main: Mrchlldev\AntiFallDamage\Main
+author: Mrchlldev
+version: 1.0.0
+
+permissions:
+  antifalldamage.bypass:
+    default: op

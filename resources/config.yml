@@ -1,0 +1,10 @@
+## AntiFallDamage Plugin by Mrchlldev 
+## Please don't change the author!
+
+## For alternative, add the antifalldamage.bypass permission to cancel fall damage in player!
+
+## Input your world folder name here
+worlds:
+- "world1"
+- "world2"
+- "world3"
