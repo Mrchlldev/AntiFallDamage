@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener {
                     $event->cancel();
                 }
             }
-            if($player->hasPermission("antifalldamage.bypass")){
+            if($entity->hasPermission("antifalldamage.bypass")){
                 $entity->sendTip("§aWe remove the fall damage for you!");
                 $event->cancel();
             }
